@@ -1,6 +1,10 @@
 class NotesController < ApplicationController
   before_action :set_note, only: [:show, :update, :destroy]
 
+  def api
+
+  end
+
   def index
     @notes = Note.all
     render json: @notes
